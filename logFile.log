@@ -1,0 +1,20 @@
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb+srv://lwazim:lwazi209@cluster0.kvr8b.mongodb.net/vidly?retryWrites=true...","level":"info"}
+{"message":"Listening on port 3000","level":"info"}
+{"name":"MongoParseError","level":"error","message":"Invalid connection string Invalid connection string","stack":"MongoParseError: Invalid connection string\n    at parseConnectionString (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongodb\\lib\\core\\uri_parser.js:565:21)\n    at connect (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongodb\\lib\\operations\\connect.js:282:3)\n    at C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongodb\\lib\\mongo_client.js:224:5\n    at maybePromise (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongodb\\lib\\utils.js:665:3)\n    at MongoClient.connect (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongodb\\lib\\mongo_client.js:220:10)\n    at C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\connection.js:820:12\n    at new Promise (<anonymous>)\n    at NativeConnection.Connection.openUri (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\connection.js:817:19)\n    at C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\index.js:345:10\n    at C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:30:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\index.js:1135:10)\n    at Mongoose.connect (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\index.js:344:20)\n    at dataBase (file:///C:/Users/HP/Desktop/Vidly/startUpFile/db.js:8:14)\n    at file:///C:/Users/HP/Desktop/Vidly/index.js:13:1"}
+{"message":"Listening on port 3000","level":"info"}
+{"message":"Connected to mongodb+srv://lwazim:lwazi209@cluster0.kvr8b.mongodb.net/vidly?retryWrites=true...","level":"info"}
