@@ -4,7 +4,7 @@ const moviesSchema = mongoose.Schema({
     title:{
         type:String,
         trim:true,
-        minlength:5,
+        minlength:3,
         maxlength:255,
         required: true
     },

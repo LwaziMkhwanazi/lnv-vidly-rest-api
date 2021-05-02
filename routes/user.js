@@ -16,16 +16,19 @@ router.get('/me',auth,async(req,res)=>{
 })
 
 //Get a list of users
-router.get('/',[auth,admin],async(req,res)=>{
-        const users = await User.find().sort('name')
+router.get('/',async(req,res)=>{
+        let users = await User.find().sort('name')
         res.send(users)
 })
+
+// Edit User
+
 
 //Register new User
 router.post('/',validate(userValidation), async(req,res)=>{
                  let user = await User.findOne({email:req.body.email})
             if(user) return res.status(400).send('User already exist')
-             user = new User(_.pick(req.body,['name','email','password'])) 
+             user = new User(_.pick(req.body,['name','email','password','isAdmin'])) 
              const salt = await bcrypt.genSalt(10)
              user.password = await bcrypt.hash(req.body.password,salt)
             user = await user.save()
@@ -33,4 +36,10 @@ router.post('/',validate(userValidation), async(req,res)=>{
           res.header('x-auth-token',token).send(_.pick(user,['_id','name','email'])) 
 })
 
+//Delete User 
+router.delete('/:id',async(req,res)=>{
+      let user = await User.findByIdAndDelete(req.params.id)
+      if(!user) return res.send('User with a given Id was not Found')
+      res.send(user)  
+})
 export default router

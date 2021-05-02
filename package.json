@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "client": "cd Desktop/lnv-vidly-app",
+    "dev": "concurrently -n 'server,client' -c 'green,blue' \"nodemon index.js\" \"npm run client\""
   },
   "engines": {
     "node": "14.15.1"
@@ -20,6 +21,7 @@
     "bcrypt": "^5.0.0",
     "compression": "^1.7.4",
     "config": "^3.3.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "helmet": "^4.4.1",

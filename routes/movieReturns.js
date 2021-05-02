@@ -7,13 +7,14 @@ import Rental from "../models/rentalModel.js";
 import Movie from "../models/movieModel.js";
 const router = express.Router()
 
-router.post('/',[auth,validate(validation)],async(req,res)=>{
+router.post('/',[validate(validation)],async(req,res)=>{
+    
     // return 400 if customerId is not provided
      const rental = await Rental.lookup(req.body.customerId,req.body.movieId)
         // return 404 if the rental was not found for this customer/movie
         if(!rental) return res.status(404).send('Rental not Found')
         //return 400 if rental already processed
-        if(rental.dateReturned) res.status(400).send('Return already processed') 
+        if(rental.dateReturned) return res.status(400).send('Return already processed') 
             rental.return()
             await rental.save()
             // Increase the stock
@@ -24,5 +25,8 @@ router.post('/',[auth,validate(validation)],async(req,res)=>{
             return res.send(rental)
   
 });
+
+
+
 
 export default router

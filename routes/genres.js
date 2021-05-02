@@ -8,7 +8,7 @@ import admin from "../middlleware/admin.js";
 
 const router = express.Router()
 // //Create a Genru
-router.post('/',[auth,validate(validateGenru)],async(req,res)=>{
+router.post('/',[validate(validateGenru)],async(req,res)=>{
                let genru = new Genre(req.body)
                  genru = await genru.save()
                 res.send(genru)
@@ -16,6 +16,7 @@ router.post('/',[auth,validate(validateGenru)],async(req,res)=>{
 // // Get All List Of Genrus
 router.get('/',async(req,res) =>{
            const genrus= await Genre.find().sort('name')
+           if(genrus.length === 0) return res.send('No Genres available')
             res.send(genrus) 
 })
 
@@ -28,14 +29,15 @@ router.get('/:id',ValidateObjectId, async(req,res)=>{
 
 
 // Update request
-router.put('/:id',[auth,ValidateObjectId], async(req,res)=>{
+router.put('/:id',[ValidateObjectId], async(req,res)=>{
+           
             const genre = await Genre.findByIdAndUpdate(req.params.id,{name:req.body.name},{new:true})
             if(!genre) res.send('The genre with a given Id was not Found')
            res.send(genre) 
 })
 
 //Delete request
-router.delete('/:id',[auth,ValidateObjectId],async(req,res)=>{
+router.delete('/:id',[ValidateObjectId],async(req,res)=>{
             const genre = await Genre.findByIdAndDelete(req.params.id)
                 if(!genre) return res.send('Genre with a given Id was not Found')
                 res.send(genre)

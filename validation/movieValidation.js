@@ -8,7 +8,7 @@ Joi.objectId = myJoiObjectId
 
     const movieSchema = Joi.object().keys({
         _id:Joi.objectId(),
-        title: Joi.string().trim().min(3).max(20),
+        title: Joi.string().trim().min(3).max(225),
         genreId: Joi.objectId().required(),
         numberInStock: Joi.number().min(0).required(),
         dailyRentalRate: Joi.number().min(0).required()

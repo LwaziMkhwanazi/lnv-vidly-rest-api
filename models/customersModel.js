@@ -1,13 +1,13 @@
 import mongoose from "mongoose"
 
-const customerSchema = mongoose.Schema({
+const customerSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true
     },
         isGold:{
-            type:Boolean,
-            default: false
+            type:String,
+            default: "No"
         },
         phone: {
             type:Number,

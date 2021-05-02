@@ -6,26 +6,21 @@ import Transaction from "mongoose-transactions";
 import rentalValidation from "../validation/rentalValidation.js";
 import validate from "../middlleware/validate.js"
 import auth from "../middlleware/auth.js";
+import router from './movieReturns.js';
 const routor = express.Router()
 const transaction = new Transaction()
 
 
 // Get all Rentals
-routor.get('/',auth, async(req,res)=>{
-try {
+routor.get('/', async(req,res)=>{
     const rentals = await Rental.find().sort('-dateOut')
         res.send(rentals)
-} catch (error) {
-    res.send(error.message)
-}
 })
 
+
 //Create Rental
-routor.post('/',[auth,validate(rentalValidation)], async(req,res)=>{
-//incoming request validation
-const {error} = rentalValidation(req.body)
-    if(error) return res.status(400).send(error.message)
-   
+routor.post('/',[validate(rentalValidation)], async(req,res)=>{
+
 //find customer by id
 const customer = await Customer.findById(req.body.customerId)
     if(!customer) return res.status(400).send('Invalid Customer')
@@ -58,5 +53,8 @@ try {
 }
 
 })
+
+
+
 
 export default routor
