@@ -23,7 +23,7 @@ const rentalSchema =  new mongoose.Schema({
                 }),
                 required:true
             },
-            movie:{
+            movie:{ 
                 type: new mongoose.Schema({
                     title:{
                         type: String,
@@ -31,6 +31,9 @@ const rentalSchema =  new mongoose.Schema({
                         trim: true,
                         minlength:5,
                         maxlength:255
+                    },
+                    genre:{
+                      type:String  
                     },
                     dailyRentalRate:{
                         type: Number,

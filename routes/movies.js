@@ -46,13 +46,9 @@ router.put('/:id',[validate(movieValidate)],async(req,res)=>{
 })
 
 
-
-
-
-
 //Get List of Movies
 router.get('/',async(req,res)=>{
-    const  movies = await Movie.find()
+    const  movies = await Movie.find()                 
     res.send(movies)
 })
 //Get Single Movie

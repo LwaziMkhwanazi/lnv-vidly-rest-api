@@ -17,12 +17,9 @@ router.get('/me',auth,async(req,res)=>{
 
 //Get a list of users
 router.get('/',async(req,res)=>{
-        let users = await User.find().sort('name')
+        let users = await User.find({},{"password":0}).sort('name')
         res.send(users)
 })
-
-// Edit User
-
 
 //Register new User
 router.post('/',validate(userValidation), async(req,res)=>{

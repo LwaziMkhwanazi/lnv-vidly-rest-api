@@ -1,18 +1,19 @@
 {
-  "name": "vidly",
+  "name": "vidly-server",
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "client": "cd Desktop/lnv-vidly-app",
-    "dev": "concurrently -n 'server,client' -c 'green,blue' \"nodemon index.js\" \"npm run client\""
+    "start":"node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
   },
   "engines": {
-    "node": "14.15.1"
+    "node": "14.16.1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lwazi Mkhwanazi",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.12.13",

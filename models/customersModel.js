@@ -11,9 +11,10 @@ const customerSchema = new mongoose.Schema({
         },
         phone: {
             type:Number,
-            required:true
+            required:true,
+            unique:true
         }
-})
+},{ timestamps: true })
 
 const Customer = mongoose.model('customer',customerSchema)
 

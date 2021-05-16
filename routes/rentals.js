@@ -17,10 +17,15 @@ routor.get('/', async(req,res)=>{
         res.send(rentals)
 })
 
+//get list of all romantic genres rentals
+router.get('/romantic', async(req,res)=>{
+    const rentals = await Rental.find({"genre.name":"Romantic"})
+    res.send(rentals)
+})
+
 
 //Create Rental
 routor.post('/',[validate(rentalValidation)], async(req,res)=>{
-
 //find customer by id
 const customer = await Customer.findById(req.body.customerId)
     if(!customer) return res.status(400).send('Invalid Customer')
@@ -39,22 +44,17 @@ const rental = new Rental({
     movie:{
         _id:movie._id,
         title:movie.title,
+        genre:movie.genre.name,
         dailyRentalRate: movie.dailyRentalRate
     }
 })
 
-try {
-        transaction.insert('Rental', rental)
-        transaction.update('Movie',movie._id,{$inc:{numberInStock: -1}})
-        await transaction.run()
-        res.send(rental)
-} catch (error) {
-        res.status(500).send(error.message)
-}
+transaction.insert('Rental', rental)
+transaction.update('Movie',{_id:movie._id},{$inc:{numberInStock: -1}})
+await transaction.run()
+res.send(rental)
 
 })
-
-
 
 
 export default routor
