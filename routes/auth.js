@@ -8,7 +8,7 @@ import bcrypt from "bcrypt";
 const router = express.Router()
 
 //Login User
-router.post('/',validate(authValidation), async(req,res)=>{
+router.post('/login',validate(authValidation), async(req,res)=>{
             let user = await User.findOne({email:req.body.email})
             if(!user) return res.status(400).send('Invalid email or password')
 
@@ -16,6 +16,25 @@ router.post('/',validate(authValidation), async(req,res)=>{
             if(!validPassword) return res.status(400).send('Invalid email or password 2')
               const token =  user.generateAuthToken()
                 res.header('x-auth-token',token).send(token)
+})
+
+
+router.get('/',async(req,res)=>{
+  res.send('Hi')
+})
+
+router.delete('/', (req, res) => {
+  if (req.session) {
+    req.session.destroy(err => {
+      if (err) {
+        res.status(400).send('Unable to log out')
+      } else {
+        res.send('Logout successful')
+      }
+    });
+  } else {
+    res.end()
+  }
 })
 
 export default router

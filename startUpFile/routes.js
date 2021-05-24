@@ -9,7 +9,6 @@ import movieReturn from "../routes/movieReturns.js";
 import errorhanlder from "../middlleware/error.js"; 
 import dashboard from "../routes/dashboard.js"
 
-
 function handleRoutes(app) {
         app.use(express.json())
         app.use('/api/genres', genres)

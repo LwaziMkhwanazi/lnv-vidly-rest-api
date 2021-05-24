@@ -8,7 +8,9 @@ import prodMiddleWare from "./startUpFile/prod.js"
 import cors from "cors"
 const app = express()
 
+
 app.use(cors())
+app.use(express.json())
 config()
 handleRoutes(app)
 dataBase()

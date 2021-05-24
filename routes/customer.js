@@ -2,7 +2,7 @@ import Customer from "../models/customersModel.js";
 import customerValidate from "../validation/customerValidation.js"
 import validateObjectID from "../middlleware/validateObjectID.js"
 import validate from "../middlleware/validate.js";
-import customerphone from "../validation/customerphoneval.js"
+import phonenumberValidation from "../validation/customerphoneval.js"
 import express from "express"
 import auth from "../middlleware/auth.js";
 import Rental from "../models/rentalModel.js"
@@ -33,7 +33,7 @@ router.post('/',[validate(customerValidate)], async(req,res)=>{
 })
 
 // Get Single Customer by phone
-router.get('/:phone',[validate(customerphone)],async(req,res)=>{
+router.get('/:phone',async(req,res)=>{
         let customer = await Customer.findOne({phone:req.params.phone})
         if(!customer) return res.send('Customer does not exist. Please double check the phone number')
         res.send(customer)

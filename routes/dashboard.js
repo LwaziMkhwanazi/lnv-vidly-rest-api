@@ -3,6 +3,7 @@ import Rental from "../models/rentalModel.js"
 import Movie from "../models/movieModel.js"
 import Customer from "../models/customersModel.js"
 import Report from "../models/reportsModel.js"
+import config from "config";
 
 const router = express.Router()
 
@@ -66,5 +67,7 @@ router.get('/comedy', async(req,res)=> {
   const rentals = await Rental.find({"movie.genre":"Comedy"}).countDocuments()
   res.send({rentals:rentals})
 })
+
+
 
 export default router

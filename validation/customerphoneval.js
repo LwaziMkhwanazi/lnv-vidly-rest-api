@@ -1,11 +1,10 @@
-import Joi from "joi";
+import Joi from "joi"
 
-const phoneValidation = (number) =>{
-    const customerSchema = Joi.object().keys({
-        name: Joi.string().pattern(new RegExp(/^[0-9]+$/)).min(8).max(8),
-     
+const phoneNumberValidation = (number)=>{
+    const phoneSchema = Joi.object().keys({
+        phone: Joi.number('Digits only')
     })
-    return customerSchema.validate(number)
+    return phoneSchema.validate(number)
 }
 
-export default phoneValidation
+export default phoneNumberValidation
