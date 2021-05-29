@@ -1550,3 +1550,171 @@
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
 {"message":"Listening on port 8080","level":"info"}
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"stringValue":"\"Comedy\"","kind":"Embedded","value":"Comedy","path":"genre","reason":{},"level":"error","message":"Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\" Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"","stack":"CastError: Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4358:21)\n    at model.Query.Query.then (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4450:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"stringValue":"\"Comedy\"","kind":"Embedded","value":"Comedy","path":"genre","reason":{},"level":"error","message":"Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\" Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"","stack":"CastError: Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4358:21)\n    at model.Query.Query.then (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4450:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"stringValue":"\"req.query.genre\"","kind":"Embedded","value":"req.query.genre","path":"genre","reason":{},"level":"error","message":"Cast to Embedded failed for value \"req.query.genre\" at path \"genre\" for model \"Movie\" Cast to Embedded failed for value \"req.query.genre\" at path \"genre\" for model \"Movie\"","stack":"CastError: Cast to Embedded failed for value \"req.query.genre\" at path \"genre\" for model \"Movie\"\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4358:21)\n    at model.Query.Query.then (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4450:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"stringValue":"\"Comedy\"","kind":"Embedded","value":"Comedy","path":"genre","reason":{},"level":"error","message":"Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\" Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"","stack":"CastError: Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4358:21)\n    at model.Query.Query.then (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4450:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"stringValue":"\"Comedy\"","kind":"Embedded","value":"Comedy","path":"genre","reason":{},"level":"error","message":"Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\" Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"","stack":"CastError: Cast to Embedded failed for value \"Comedy\" at path \"genre\" for model \"Movie\"\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4358:21)\n    at model.Query.Query.then (C:\\Users\\HP\\Desktop\\Vidly\\node_modules\\mongoose\\lib\\query.js:4450:15)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}

@@ -48,7 +48,11 @@ router.put('/:id',[validate(movieValidate)],async(req,res)=>{
 
 //Get List of Movies
 router.get('/',async(req,res)=>{
-    const  movies = await Movie.find()                 
+  let filter = {}
+  if(req.query.genre){
+    filter = {"genre.name":req.query.genre}
+  }
+    const  movies = await Movie.find(filter)                                                              
     res.send(movies)
 })
 //Get Single Movie

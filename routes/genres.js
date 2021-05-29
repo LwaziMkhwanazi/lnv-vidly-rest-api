@@ -15,6 +15,7 @@ router.post('/',[validate(validateGenru)],async(req,res)=>{
 });
 // // Get All List Of Genrus
 router.get('/',async(req,res) =>{
+
            const genrus= await Genre.find().sort('name')
            if(genrus.length === 0) return res.send('No Genres available')
             res.send(genrus) 

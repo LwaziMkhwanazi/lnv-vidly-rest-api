@@ -10,11 +10,10 @@ const app = express()
 
 
 app.use(cors())
-app.use(express.json())
 config()
-handleRoutes(app)
 dataBase()
 prodMiddleWare(app)
+handleRoutes(app)
 
 console.log(app.get('env'))
 
