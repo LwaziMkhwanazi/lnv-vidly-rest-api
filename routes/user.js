@@ -16,13 +16,13 @@ router.get('/me',auth,async(req,res)=>{
 })
 
 //Get a list of users
-router.get('/',async(req,res)=>{
+router.get('/',auth,async(req,res)=>{
         let users = await User.find({},{"password":0}).sort('name')
         res.send(users)
 })
 
 //Register new User
-router.post('/',validate(userValidation), async(req,res)=>{
+router.post('/',[auth,admin,validate(userValidation)], async(req,res)=>{
                  let user = await User.findOne({email:req.body.email})
             if(user) return res.status(400).send('User already exist')
              user = new User(_.pick(req.body,['name','email','password','isAdmin'])) 
@@ -34,7 +34,7 @@ router.post('/',validate(userValidation), async(req,res)=>{
 })
 
 //Delete User 
-router.delete('/:id',async(req,res)=>{
+router.delete('/:id',auth,async(req,res)=>{
       let user = await User.findByIdAndDelete(req.params.id)
       if(!user) return res.send('User with a given Id was not Found')
       res.send(user)  

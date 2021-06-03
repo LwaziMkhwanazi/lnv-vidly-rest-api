@@ -12,20 +12,20 @@ const transaction = new Transaction()
 
 
 // Get all Rentals
-routor.get('/', async(req,res)=>{
+routor.get('/',auth, async(req,res)=>{
     const rentals = await Rental.find().sort('-dateOut')
         res.send(rentals)
 })
 
 //get list of all romantic genres rentals
-router.get('/romantic', async(req,res)=>{
+router.get('/romantic',auth, async(req,res)=>{
     const rentals = await Rental.find({"genre.name":"Romantic"})
     res.send(rentals)
 })
 
 
 //Create Rental
-routor.post('/',[validate(rentalValidation)], async(req,res)=>{
+routor.post('/',[auth,validate(rentalValidation)], async(req,res)=>{
 //find customer by id
 const customer = await Customer.findById(req.body.customerId)
     if(!customer) return res.status(400).send('Invalid Customer')

@@ -7,7 +7,7 @@ import Rental from "../models/rentalModel.js";
 import Movie from "../models/movieModel.js";
 const router = express.Router()
 
-router.post('/',[validate(validation)],async(req,res)=>{
+router.post('/',[auth,validate(validation)],async(req,res)=>{
     
     // return 400 if customerId is not provided
      const rental = await Rental.lookup(req.body.customerId,req.body.movieId)

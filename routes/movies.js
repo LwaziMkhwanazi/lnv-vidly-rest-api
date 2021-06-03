@@ -9,7 +9,7 @@ import admin from "../middlleware/admin.js"
 const router = express.Router()
 
 //Create Single Movie
-router.post('/',[validate(movieValidate)],async(req,res)=>{
+router.post('/',[auth,validate(movieValidate)],async(req,res)=>{
   const genre = await Genre.findById(req.body.genreId)
   if(!genre) return res.status(400).send('Genre not Found')
   let movie = new Movie({
@@ -27,7 +27,7 @@ router.post('/',[validate(movieValidate)],async(req,res)=>{
 
 //Editing Movie
 
-router.put('/:id',[validate(movieValidate)],async(req,res)=>{
+router.put('/:id',[auth,validate(movieValidate)],async(req,res)=>{
  
   const genre = await Genre.findById(req.body.genreId)
   if(!genre) return res.status(400).send('Genre not Found')
@@ -47,7 +47,7 @@ router.put('/:id',[validate(movieValidate)],async(req,res)=>{
 
 
 //Get List of Movies
-router.get('/',async(req,res)=>{
+router.get('/',auth,async(req,res)=>{
   let filter = {}
   if(req.query.genre){
     filter = {"genre.name":req.query.genre}
@@ -56,14 +56,14 @@ router.get('/',async(req,res)=>{
     res.send(movies)
 })
 //Get Single Movie
-router.get('/:id',ValidateObjectId,async(req,res)=>{
+router.get('/:id',auth,ValidateObjectId,async(req,res)=>{
   //check if movie is available
     const movie = await Movie.findById(req.params.id)
     res.send(movie)  
 })
 
 //Delete Movie
-router.delete('/:id',[ValidateObjectId], async(req,res)=>{
+router.delete('/:id',[auth,admin,ValidateObjectId], async(req,res)=>{
         let movie = await Movie.findByIdAndDelete(req.params.id)
         if(!movie) return res.status('400').send('Movie With A Given Id Not Found')
           res.send(movie)
