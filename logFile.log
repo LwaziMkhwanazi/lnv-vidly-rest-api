@@ -12,3 +12,62 @@
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
 {"message":"Listening on port 8080","level":"info"}
 {"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"data":{"_id":"60ba0db2e5d8701ef442c41d","customer":{"isGold":"No","_id":"605cd237f210b633b8b3545f","name":"Lwazi Mkhwanazi","phone":"76295186"},"movie":{"_id":"60743aebea665b39a492e35c","title":"Tai-Chi II","genre":"Karate","dailyRentalRate":15},"dateOut":"2021-06-04T11:25:38.994Z","__v":0},"error":{"filter":{"_id":"60ba0db2e5d8701ef442c41d"},"query":{"_id":"60ba0db2e5d8701ef442c41d"}},"executedTransactions":12,"remainingTransactions":2,"level":"error"}
+{"data":{"_id":"60ba0db2e5d8701ef442c41d","customer":{"isGold":"No","_id":"605cd237f210b633b8b3545f","name":"Lwazi Mkhwanazi","phone":"76295186"},"movie":{"_id":"60743aebea665b39a492e35c","title":"Tai-Chi II","genre":"Karate","dailyRentalRate":15},"dateOut":"2021-06-04T11:25:38.994Z","__v":0},"error":{"filter":{"_id":"60ba0db2e5d8701ef442c41d"},"query":{"_id":"60ba0db2e5d8701ef442c41d"}},"executedTransactions":12,"remainingTransactions":4,"level":"error"}
+{"data":{"_id":"60ba0db2e5d8701ef442c41d","customer":{"isGold":"No","_id":"605cd237f210b633b8b3545f","name":"Lwazi Mkhwanazi","phone":"76295186"},"movie":{"_id":"60743aebea665b39a492e35c","title":"Tai-Chi II","genre":"Karate","dailyRentalRate":15},"dateOut":"2021-06-04T11:25:38.994Z","__v":0},"error":{"filter":{"_id":"60ba0db2e5d8701ef442c41d"},"query":{"_id":"60ba0db2e5d8701ef442c41d"}},"executedTransactions":12,"remainingTransactions":6,"level":"error"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}
+{"message":"Listening on port 8080","level":"info"}
+{"message":"Connected to mongodb://localhost/vidly...","level":"info"}

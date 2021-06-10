@@ -30,7 +30,7 @@ router.post('/',[auth,admin,validate(userValidation)], async(req,res)=>{
              user.password = await bcrypt.hash(req.body.password,salt)
             user = await user.save()
             const token = user.generateAuthToken()
-          res.header('x-auth-token',token).send(_.pick(user,['_id','name','email'])) 
+          res.header('auth',token).send(_.pick(user,['_id','name','email'])) 
 })
 
 //Delete User 

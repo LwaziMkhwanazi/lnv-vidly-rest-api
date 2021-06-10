@@ -15,26 +15,14 @@ router.post('/login',validate(authValidation), async(req,res)=>{
           const validPassword = await bcrypt.compare(req.body.password,user.password)
             if(!validPassword) return res.status(400).send('Invalid email or password ')
               const token =  user.generateAuthToken()
-                res.send(token)
+                res.header('auth',token).send(token)
 })
 
 
 router.get('/',async(req,res)=>{
-  res.send('Hi')
+  res.header('auth','').send("Logout succesfully")
 })
 
-router.delete('/', (req, res) => {
-  if (req.session) {
-    req.session.destroy(err => {
-      if (err) {
-        res.status(400).send('Unable to log out')
-      } else {
-        res.send('Logout successful')
-      }
-    });
-  } else {
-    res.end()
-  }
-})
+
 
 export default router

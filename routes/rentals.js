@@ -49,10 +49,18 @@ const rental = new Rental({
     }
 })
 
-transaction.insert('Rental', rental)
-transaction.update('Movie',{_id:movie._id},{$inc:{numberInStock: -1}})
-await transaction.run()
-res.send(rental)
+const session = await Rental.startSession()
+await session.withTransaction(async function executor(){
+    await Rental.create(rental,'Rental',{session:session})
+   let movie = await Movie.findByIdAndUpdate(movie._id,{$inc:{numberInStock: -1}},{new:true}).session(session)
+    movie.save()
+}).catch(error =>{
+    res.json({data:'Something failed, Transaction was not complete',message:error.message})
+})
+// transaction.insert('Rental', rental)
+// transaction.update('Movie',{_id:movie._id},{$inc:{numberInStock: -1}})
+// await transaction.run()
+// res.send(rental)
 
 })
 
